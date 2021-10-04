@@ -15,17 +15,9 @@ function sleep(ms) {
     const username = core.getInput('username');
     const password = core.getInput('password');
     const wait_time = core.getInput('wait-time');
-
-    //const domain = "http://srvwp15.westeurope.cloudapp.azure.com:8084"
-    //const uri = "/NTX/ntxWebService?LinkID=178&TypeID=1&MachineID=132&RepositoryID=2&ProjectID=0bd5b276-08aa-4cd7-b6c1-0f18b7bcf951&Version=92&Cycle=93&UserId=46&ServerURL=18&EnvironmentId=8&Collection=DefaultCollection&Token=qafbanqku4ckwt4jnt7lcretgvfqpo4nthacvoixsvbhnryql2ua"
     
     console.log(`Web request to ${domain}${uri}`);
     const url = `${domain}${uri}`
-
-    //USED for debug
-    //const username = 'alho';
-    //const password = 'admin';
-    //const wait_time = 20;
 
     const response = await axios.get(url, {
       auth: {
@@ -67,9 +59,7 @@ function sleep(ms) {
       
       const code = response.data.status_code;
       message = response.data.message;
-      //const execution_link = response.data.execution_link;
 
-      console.log("Code: " + code);
       switch(code){
 
         case 1:

@@ -17,7 +17,7 @@ Testing on NTX - GitHub Action
 **Required** The NTX password.
 
 ### `wait-time`
-**Required** The domain of the machine where NTX is installed. Default: `"20"`
+**Required** The time between requests. Default: `"20"`
 
 ## Outputs
 
