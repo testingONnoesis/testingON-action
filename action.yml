@@ -1,0 +1,26 @@
+name: 'NTX Testing'
+description: 'Greet someone and record the time'
+inputs:
+  domain:  # NTX Domain
+    description: 'Request Domain to performe testing on ntx '
+    required: true
+    default: 'World'
+  uri:  # URI
+    description: 'Request URI to performe testing on ntx '
+    required: true
+  username:  # NTX Username
+    description: 'Request Username to performe testing on ntx '
+    required: true
+  password:  # NTX Password
+    description: 'Request Password to performe testing on ntx '
+    required: true
+  wait-time: # Time interval
+    description: 'Time in seconds between getStatus request'
+    required: true
+    default: 20
+outputs:
+  status: # id of output
+    description: 'The state of the test'
+runs:
+  using: 'node12'
+  main: 'index.js'
