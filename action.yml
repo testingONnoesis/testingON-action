@@ -1,5 +1,5 @@
 name: 'NTX Testing'
-description: 'Greet someone and record the time'
+description: 'NTX testing github actions'
 inputs:
   domain:  # NTX Domain
     description: 'Request Domain to performe testing on ntx '

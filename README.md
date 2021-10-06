@@ -28,7 +28,7 @@ The message with result of the test
 ## Example usage
 
 
-**uses:** noesis-teste/ntx-action@v2
+**uses:** NTXnoesis/ntx-action@V1.1
 **with:**
 &ensp; **domain:** 'http://localhost:8080'
 &ensp; **uri:** '/NTX/ntxWebService?LinkID=178&TypeID=1...'
